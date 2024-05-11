@@ -1,0 +1,321 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Academic Consultation</title> 
+    <!-- Linking Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Apply Poppins font to the entire document */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Use Poppins font for the header specifically */
+        .header p {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+        }
+        /* Style for the navigation links */
+        .nav-upper-options ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav-upper-options li {
+            margin-bottom: 50px;
+        }
+        .nav-upper-options a {
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+        .nav-upper-options a .icon {
+            margin-right: 32px;
+        }
+        /* Increase font size for specific links */
+        .nav-upper-options a.dashboard {
+            font-size: 17px; /* Adjust font size as needed */
+            margin-left: auto;
+            font-weight: 800;
+        }
+        .nav-upper-options a.schedule {
+            font-size: 17px; /* Adjust font size as needed */
+            margin-left: auto;
+            font-weight: 800;
+        }
+        .nav-upper-options a.form {
+            font-size: 17px; /* Adjust font size as needed */
+            margin-left: auto;
+            font-weight: 800;
+        }
+        .nav-upper-options a.profile {
+            font-size: 17px; /* Adjust font size as needed */
+            margin-left: auto;
+            font-weight: 800;
+        }
+        .nav-upper-options a.logout-link {
+            font-size: 17px; /* Adjust font size as needed */
+            margin-left: 40px;
+            margin-top: 500px;
+            font-weight: 800;
+        }
+        /* Hover effect */
+        .nav-upper-options a:hover {
+            transform: translateX(5px); /* Adjust the distance */
+        }
+        /* Calendar styles */
+        .wrapper {
+            width: 50%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.12);
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .wrapper header {
+            display: flex;
+            align-items: center;
+            padding: 25px 30px 10px;
+            justify-content: space-between;
+        }
+        header .icons {
+            display: flex;
+        }
+        header .icons span {
+            height: 38px;
+            width: 38px;
+            margin: 0 1px;
+            cursor: pointer;
+            color: #878787;
+            text-align: center;
+            line-height: 38px;
+            font-size: 1.9rem;
+            user-select: none;
+            border-radius: 50%;
+        }
+        .icons span:last-child {
+            margin-right: -10px;
+        }
+        header .icons span:hover {
+            background: #f2f2f2;
+        }
+        header .current-date {
+            font-size: 1.45rem;
+            font-weight: 500;
+        }
+        .calendar ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            text-align: center;
+        }
+        .calendar .days {
+            margin-bottom: 20px;
+        }
+        .calendar li {
+            color: #000000;
+            width: calc(100% / 7);
+            font-size: 1.07rem;
+        }
+        .calendar .weeks li {
+            font-weight: 400;
+            cursor: default;
+        }
+        .calendar .days li {
+            z-index: 1;
+            cursor: pointer;
+            position: relative;
+            margin-top: 23px;
+        }
+        .days li.inactive {
+            color: #aaa;
+        }
+        .days li.active {
+            color: #fff;
+            font-weight: 400;
+        }
+        .days li::before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            height: 40px;
+            width: 40px;
+            z-index: -1;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .days li.active::before {
+            background: #48bd69;
+        }
+        .days li:not(.active):hover::before {
+            background: #f2f2f2;
+        }
+
+        /* Adjust margin for the logo */
+        .header img {
+            margin-right: 10px; /* Adjust as needed */
+            margin-top: -153px; /* Adjust as needed */
+        }
+
+        /* Adjust margin for the header text */
+        .header h2,
+        .header p {
+            margin-left: 97px; /* Adjust as needed */
+            margin-bottom: 5px; /* Adjust as needed */
+            margin-top: -5px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="schedule.css"> 
+</head> 
+  
+<body> 
+    <script src="script.js" defer></script>
+    <!-- para sa header lang  -->
+    <header>  
+        <div class="logosec">               
+            <div class="header"> 
+
+                <h2>Academic Consultation</h2>        
+                <p>Appointment Queueing System</p>
+                <img src="AConsultation APPROVED.png" alt="Logo" height="86px"> <!-- Add your image here -->
+
+                <h4>Rochelyn Fatima C. Manada</h4>
+                ​<h3 class="status">STATUS:SCHEDULED</h3>
+
+                <img style="width: 60px; height: auto; margin-left: 1750px; margin-bottom: -17px; margin-top: -150px;" src="faith.jpeg" alt="logo">
+            </div>
+        </div>
+    </header>  
+    <div class="main-container"> 
+        <div class="navcontainer"> 
+            <nav class="nav"> 
+                <div class="nav-upper-options"> 
+                    <ul>
+                        <li><a href="dashboard.html" class="dashboard"><i class="fas fa-columns icon"></i>Dashboard</a></li>
+                        <li><a href="schedule.html" class="schedule"><i class="fas fa-calendar-alt icon"></i>Schedule</a></li>
+                        <li><a href="form.html" class="form"><i class="fas fa-pen icon"></i>Form</a></li>
+                        <li><a href="profile.html" class="profile"><i class="fas fa-user icon"></i>Profile</a></li>
+                        <!-- Logout icon -->
+                        <li><a href="logout.html" class="logout-link"><i class="fas fa-sign-out-alt icon"></i>Logout</a></li>
+                    </ul>
+                </div> 
+            </nav> 
+        </div> 
+        <div class="main"> 
+            <h1> Schedule </h1>
+            <i><p> *Proceed to Form once you're done checking the schedule.* </p></i>
+            <img src="status-bar.png" alt="Status" height="150px"> <!-- Add your image here -->
+            <!-- Calendar code goes here -->
+            <div class="wrapper">
+                <div class="content-header">
+                    <h2 class="current-date"></h2>
+                    <div class="icons">
+                        <span id="prev"><i class="fas fa-chevron-left"></i></span>
+                        <span id="next"><i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+                
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>SUN</li>
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FRI</li>
+                        <li>SAT</li>
+                    </ul>
+                    <ul class="days"></ul>
+                </div>
+
+                <div class="border1">
+                  <div class="horizontal">
+                  </div>
+      
+                  <div class="appointment">
+                  <h3>Appointment History</h3>
+                  </div>
+      
+                  <div class="box1">
+                    <div class="div vertical1">
+                         <div class="sirLoudel">
+                                <img src="faith.jpeg" alt="logo">
+                                <h2>Mr. Loudel M. Manaloto</h2>
+                                <p>Face to Face</p>
+                            <div class="clock1">
+                                <span class='bx bx-time-five icon'></span>
+                                <p>Fri Feb 16 • 2:30-3:00PM</p>
+                      </div>
+                          <div class="box2">
+                              <div class="div vertical2">
+                                <div class="sirRonnie">
+                                    <img src="faith.jpeg" alt="logo">
+                                    <h2>Prof. Ronnie Luy</h2>
+                                    <p>Face to Face</p>
+                                <div class="clock1">
+                                    <span class='bx bx-time-five icon'></span>
+                                    <p>Wed Feb 16 • 10:00-10:30PM</p>
+                              </div>
+                              <div class="box3"> 
+                                  <div class="div vertical3">
+                                    <div class="maamDenise">
+                                        <img src="faith.jpeg" alt="logo">
+                                        <h2>Prof. Denise Punzalan</h2>
+                                        <p>Face to Face</p>
+                                    <div class="clock1">
+                                        <span class='bx bx-time-five icon'></span>
+                                        <p>Wed Feb 14 • 3:00-3:30PM</p>
+                                  </div> 
+                              </div> 
+                          </div>
+                      </div>
+      
+              </div>
+              <div class="border2">
+                  <div class="horizontal1">
+                  </div>
+                  <div class="appointment">
+                      <h3>Upcoming Appointments</h3>
+                      <div class="box1-1">
+                          <div class="vertical1-1">
+                            <div class="maamDenise1">
+                                <img src="faith.jpeg" alt="logo">
+                                <h2>Prof. Denise Punzalan</h2>
+                                <p>Online</p>
+                            <div class="clock1">
+                                <span class='bx bx-time-five icon'></span>
+                                <p>Mon Feb 19 • 11:00-11:30PM</p>
+                          </div>
+                              <div class="box2-2">
+                                  <div class="div vertical2-2">
+                                    <img src="faith.jpeg" alt="logo">
+                                <h2>Mr. Loudel M. Manaloto</h2>
+                                <p>Face to Face</p>
+                            <div class="clock1">
+                                <span class='bx bx-time-five icon'></span>
+                                <p>Fri Feb 16 • 2:30-3:00PM</p>
+                                  </div>
+
+                                  </div> 
+                              </div>
+                          </div>
+                  </div>
+              </div>
+                
+            </div>
+        </div> 
+    </div> 
+  
+</body> 
+</html>

@@ -1,0 +1,465 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+h2 {
+    font-size: 17px;
+    color: #f07e12;
+}
+
+p {
+    font-size: small;
+    font-family: Poppins;
+    color: #4e4e4e;
+}
+
+body { 
+    background-color: var(--background-color4); 
+    max-width: 100%; 
+    overflow-x: hidden; 
+} 
+
+header { 
+    height: 70px; 
+    width: 100%; /* Adjust width if needed */
+    padding: 0 30px; 
+    background-color: var(--background-color1); 
+    position: fixed; 
+    z-index: 100; 
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.825); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-family: 'Poppins', sans-serif; /* Add Poppins font for header */
+} 
+.header h3,
+.header h4 {
+    margin-left: 1507px; /* Adjust as needed */
+    margin-bottom: -10px; /* Adjust as needed */
+    margin-top: -55px;
+    font-size: 14px;
+    
+    }
+.status{
+    background-color: #48BD69;
+    color: white;
+    padding: 5px;
+    width: 200px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-family: Poppins;
+    margin-right: 2020px;
+    margin-bottom: -50px;
+    text-align: center;
+  }
+  h4 {
+    font-weight: 200 ;
+  }
+.img { 
+    width: 250px; 
+    height: 42px; 
+    border-radius: 50px 0 0 50px; 
+    padding: 0 20px; 
+    font-size: 15px; 
+    outline: none; 
+    border: none; 
+}
+
+.main-container { 
+    display: flex; 
+    width: 100vw; 
+    position: relative; 
+    top: 70px; 
+    z-index: 1; 
+} 
+
+.dpicn { 
+    height: 42px; 
+}
+
+.main { 
+    height: calc(100vh - 70px); 
+    width: 100%; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    padding: 40px 30px 30px 30px; 
+}
+
+.nav { 
+    min-height: 91vh; 
+    width: 250px; 
+    background-color: #f07e12;
+    position: absolute; 
+    top: 0px; 
+    left: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    overflow: hidden; 
+    padding: 30px 0 20px 10px; 
+}
+
+.navcontainer { 
+    height: calc(100vh - 70px); 
+    width: 250px; 
+    position: relative; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    transition: all 0.5s ease-in-out; 
+}
+
+.navcontainer::-webkit-scrollbar { 
+    display: none; 
+}
+.h2 appointment-history {
+    margin-top: -40px;
+}
+div.border1{
+    border-style: outset;
+    width: 300px;
+    height: 350px;
+    margin-top: -620px;
+    margin-left: 1280px;
+    border-radius: 10px;
+  }
+
+  .horizontal{
+    margin-top: -10px;
+    margin-left: auto;
+    height: 15px;
+    width: 295px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  .appointment h3{
+    text-align: center;
+    margin-top: 15px;
+  }
+  div.box1{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 23px;
+    border-radius: 10px;
+    box-shadow: 100%;
+  }
+
+  .sirLoudel img{
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border-color: #737978;
+  }
+
+  .sirLoudel h2{
+    font-size: small;
+    margin-left: 80px;
+    margin-top: -60px;
+    position: absolute;
+    color:#4e4e4e
+  }
+
+  .sirLoudel p{
+    font-size: small;
+    margin-left: 80px;
+    margin-top: -43px;
+    position: absolute;
+  }
+
+  .clock1{
+    margin-left: 75px;
+    margin-top: -25px;
+  }
+
+  .clock1 p{
+    margin-left: 18px;
+    margin-top: -23px;
+    font-size: 10px;
+    color: black;
+  }
+
+  .vertical1{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  div.box2{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+
+  .sirRonnie img{
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border-color: #737978;
+  }
+
+  .sirRonnie h2{
+    font-size: small;
+    margin-left: 80px;
+    margin-top: -60px;
+    position: absolute;
+  }
+
+  .sirRonnie p{
+    font-size: small;
+    margin-left: 80px;
+    margin-top: -43px;
+    position: absolute;
+  }
+
+  .clock1{
+    margin-left: 75px;
+    margin-top: -25px;
+  }
+
+  .clock1 p{
+    margin-left: 18px;
+    margin-top: -23px;
+    font-size: 10px;
+    color: black;
+  }
+
+  .vertical2{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  div.box3{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  
+  .vertical3{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+div.border2{
+    border-style: outset;
+    width: 300px;
+    height: 350px;
+    margin-top: 130px;
+    margin-left: -20px;
+    border-radius: 10px;
+  }
+
+  .horizontal1{
+    margin-top: -10px;
+    margin-left: auto;
+    height: 15px;
+    width: 295px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
+  
+  .box1-1{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 23px;
+    border-radius: 10px;
+  }
+
+  .vertical1-1{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
+
+  div.box2-2{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: -2px;
+    border-radius: 10px;
+  }
+
+  .vertical2-2{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
+
+  div .box3-3{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: -2px;
+    border-radius: 10px;
+  }
+  
+  .vertical3-3{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
+  .border1{
+    border-style: outset;
+    width: 300px;
+    height: 350px;
+    margin-top: -50px;
+    margin-left: 629px;
+    border-radius: 10px;
+  }
+
+  .horizontal{
+    margin-top: -10px;
+    margin-left: auto;
+    height: 15px;
+    width: 295px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  .appointment h3{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .box1{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 23px;
+    border-radius: 10px;
+    box-shadow: 100%;
+  }
+
+  .vertical1{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  .box2{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: -2px;
+    border-radius: 10px;
+  }
+
+  .vertical2{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  .box3{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: -2px;
+    border-radius: 10px;
+  }
+  
+  .vertical3{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #ffa44f ;
+  }
+
+  .border2{
+    border-style: outset;
+    width: 300px;
+    height: 350px;
+    margin-top: -350px;
+    margin-left: 940px;
+    border-radius: 10px;
+  }
+
+  .horizontal1{
+    margin-top: -10px;
+    margin-left: auto;
+    height: 15px;
+    width: 295px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
+  
+  div.box1-1{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 25px;
+    margin-left: 23px;
+    border-radius: 10px;
+  }
+
+  .vertical1-1{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
+
+  div.box2-2{
+    border-style: outset;
+    width: 250px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+
+  .vertical2-2{
+    margin-top: -5px;
+    margin-left: -5px;
+    height: 70px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: #48BD69 ;
+  }
